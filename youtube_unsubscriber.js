@@ -27,7 +27,7 @@ timer = function(i){
             unsubscriber(i);
             i++;
             timer(i);
-        }, 200 + 200*i);
+        }, 200);
     }
     else {
         return false;
