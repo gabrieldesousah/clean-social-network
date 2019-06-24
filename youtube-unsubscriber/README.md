@@ -1,4 +1,4 @@
-# youtube-unsubscriber
+# Instagram-delete-friends-requests
 
 Código para colar no console do google chrome para eliminar as inscrições do youtube
 
