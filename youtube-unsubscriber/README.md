@@ -1,6 +1,6 @@
 # youtube-unsubscriber
 
-Código para colar no console do google chorme para eliminar as inscrições do youtube
+Código para colar no console do google chrome para eliminar as inscrições do youtube
 
 *TODO*
 1) atualizar a lista conforme a rolagem da página. Por padrão o código só funcionará para os primeiros 100, precisa atualizar para os outros canais
