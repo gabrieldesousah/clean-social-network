@@ -156,7 +156,7 @@ deleteRequest = function (contactField) {
         let cancel = document.querySelector("button.aOOlW.HoLwm");
         let confirm = document.querySelector("button.aOOlW.-Cab_");
 
-        if (cancel) {
+        if (confirm) {
           confirm.click();
           clearInterval(veryConfirmUnfollow);
         }
