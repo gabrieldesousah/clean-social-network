@@ -107,16 +107,19 @@ requestMoreContacts = () => {
   let i = 0;
   setInterval(() => {
     loadAllRequests(i++);
-  }, 10000);
+  }, 100000);
 
   let j = 1;
+  getContact(j++);
   let deleteContacts = setInterval(() => {
-    getContact(j++);
+    if (!getContact(j++)) {
+      getContact(j++);
+    }
 
     if (j == allContactsSize) {
       clearInterval(deleteContacts);
     }
-  }, 2000);
+  }, 20000);
 };
 
 loadAllRequests = function (i) {
@@ -135,9 +138,10 @@ getContact = (index) => {
   if (!allContacts.includes(name)) {
     console.log("Deletar contato: " + name);
     deleteRequest(contactField);
-  } else {
-    console.log("Não deletar contato: " + name);
+    return true;
   }
+  console.log("Não deletar contato: " + name);
+  return false;
 };
 
 deleteRequest = function (contactField) {
